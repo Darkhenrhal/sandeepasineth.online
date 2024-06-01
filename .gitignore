@@ -1,66 +1,24 @@
-# Node.js dependencies
-node_modules/
-package-lock.json
-yarn.lock
-
-# Next.js build output
-.next/
-out/
-
-# Production build
-/build
-
-# Vite build output
-dist/
-
-# Static exports
-out/
-
-# Temporary folders and files
-.temp/
-*.tmp
-
-# Log files
-logs/
+# Logs
+logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# OS-specific files
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-Thumbs.db
-
-# dotenv environment variables file
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Next.js API build output
-.next/server/
-
-# Test coverage
-coverage/
-
-# Storybook files
-out-storybook/
-.storybook-out/
-
-# VS Code settings
-.vscode/
-
-# IDE specific files
-.idea/
-*.sublime-workspace
-
-# MacOS files
-.AppleDouble
-.LSOverride
-Icon
-
-# Windows thumbnail cache files
-Thumbs.db
-
-# Linux directory file
-.directory
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
