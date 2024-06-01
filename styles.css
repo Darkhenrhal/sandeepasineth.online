@@ -1,0 +1,6 @@
+
+@import 'tailwindcss/utilities';
+
+.delay-1000ms {
+  animation-delay: 15s;
+}
