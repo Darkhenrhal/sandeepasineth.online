@@ -134,7 +134,7 @@ export const BentoGridItem = ({
             className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 flex`}
           >
             <div>
-            {id===6 && <FaHandPointUp className="text-[38px] mr-0 pr-0"/>}
+            {/* {id===6 && <FaHandPointUp className="text-[38px] mr-0 pr-0"/>} */}
             </div>
             <div>
             {title}

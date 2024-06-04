@@ -9,7 +9,7 @@ import React from "react";
 import { navItems } from "@/data";
 import Clients from "./Components/ui/Clients";
 import Experience from "./Components/Experience";
-import Approach from "./Components/Approach";
+import Skills from "./Components/Skills";
 import Footer from "./Components/Footer";
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
         <Grid/>
         <RecentProjects/>  
         <Experience/>
-        <Approach/>
+        <Skills/>
         <Clients/>
         <Footer/>
       </div>

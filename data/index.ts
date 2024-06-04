@@ -1,9 +1,9 @@
 export const navItems = [
   { name: "Home", link: "#hero" },
   { name: "About", link: "#about" },
+  { name: "Skills", link:"#skills"},
   { name: "Projects", link: "#RecentProjects" },
   { name: "Testimonials", link: "#testimonials" },
-  { name: "Approach", link:"#approach"},
   { name: "Contact", link: "#contact" },
 ];
 
@@ -182,34 +182,35 @@ export const companies = [
   },
 ];
 
-export const workExperience = [
+export const whatido = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Software & Web Development",
+    desc: "Bring software and web applications to life with a focus on pixel-perfect user interfaces, built upon semantic, modular, and DRY code.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    id: 3,
+    title: "Mobile Application Developemt",
+    desc: "Create engaging mobile experiences that bring your ideas to life on smartphones and tablets.",
     className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp-phone.png",
+  },
+  {
+    id: 2,
+    title: "Responsive UI / UX Design",
+    desc: "Strive to develop and implement responsive and aesthetically pleasing interfaces for websites and apps that adapts to any type of device, platform or browser.",
+    className: "md:col-span-2", 
     thumbnail: "/exp2.svg",
   },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
+  
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Involvement and Freelance",
+    desc: "I Empower businesses as a freelance developer & UI/UX Designer along with Innovative solutions. ",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/exp3.svg",
   },
 ];
 
