@@ -1,7 +1,9 @@
 export const navItems = [
+  { name: "Home", link: "#hero" },
   { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
+  { name: "Projects", link: "#RecentProjects" },
   { name: "Testimonials", link: "#testimonials" },
+  { name: "Approach", link:"#approach"},
   { name: "Contact", link: "#contact" },
 ];
 
@@ -68,11 +70,11 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: `Wanna check my Resume?`,
     description: "",
     className: "lg:col-span-1 md:col-span-3 md:row-span-1",
 
-    imgClassName: "Do you want to start a project together?",
+    imgClassName: "Wanna check my Resume?",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
     spareImg: "",
@@ -150,7 +152,7 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
+    name: "Springboot",
     img: "/cloud.svg",
     nameImg: "/cloudName.svg",
   },

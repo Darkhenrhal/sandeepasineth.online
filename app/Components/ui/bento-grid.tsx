@@ -2,7 +2,7 @@
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
 import { FaHandPointUp } from "react-icons/fa";
-
+import { HiDocumentDownload } from 'react-icons/hi';
 import { GlobeDemo } from "./GridGlobe";
 import Lottie from "react-lottie";
 import { useState } from "react";
@@ -63,12 +63,14 @@ export const BentoGridItem = ({
   id:number,
 }) => {
   const [copied,setCopied]=useState(false);
-
+  //Update this to download resume... 
   const handleCopy =()=>{
     navigator.clipboard.writeText('sineth21404@gmail.com');
 
     setCopied(true)
   }
+
+
   return (
 
     <div
@@ -131,7 +133,13 @@ export const BentoGridItem = ({
           <div
             className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 flex`}
           >
-            {id===6 && <FaHandPointUp className="text-[40px]"/>}{title}
+            <div>
+            {id===6 && <FaHandPointUp className="text-[38px] mr-0 pr-0"/>}
+            </div>
+            <div>
+            {title}
+            </div>
+            
           </div>
         </div>
          
@@ -192,8 +200,8 @@ export const BentoGridItem = ({
       
         </div>
         <MBsecond
-          title={copied ? "Email is Copied!" : "Copy my email address"}
-          icon={<IoCopyOutline/>}
+          title={copied ? "Resume Downloaded" : "Download Resume"}
+          icon={<HiDocumentDownload />}
           position="left"
           handleClick={handleCopy}
           otherClasses="!bg-[#161A31]"

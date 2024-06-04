@@ -5,7 +5,7 @@ import { cn } from "@/utils/cn";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 
-export const TextGenerateEffect = ({
+export const TextGenerateEffect2 = ({
   words,
   className,
 }: {
@@ -22,40 +22,41 @@ export const TextGenerateEffect = ({
       },
       {
         duration: 2,
-        delay: stagger(0.2),
+        delay: stagger(0.05),
       }
     );
   }, [scope.current]);
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope}>
+   
+    <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
+          // Check if the word is 'specializing' and add a line break before it
+          const isSpecializing = word.toLowerCase() === 'specializing';
           return (
-            <motion.span
-              key={word + idx}
-              className={`${idx == 2 ? 'text-purple':idx==1 ?'text-bluem':'dark:text-white text-black'} opacity-0`}
-            >
-              {word}{" "}
-            </motion.span>
+            <span key={word + idx}>
+              {isSpecializing && <br />}
+              <motion.span
+                className={'opacity-0 uppercase tracking-widest text-sm text-center text-purple max-w-80'}
+              >
+                {word}{" "}
+              </motion.span>
+            </span>
           );
         })}
       </motion.div>
     );
   };
 
-  const [text] = useTypewriter({
-    words: ["Full-Stack Developer", "UI/UX Designer", "Mobile Application Developer"],
-    loop: true,
-  });
 
   return (
-    <div className={cn("font-bold", className)}>
-      <div className="my-4 mt-0 w-[90vw]">
+    <div className={cn("font-sm", className)}>
+      <div className="my-4 mt-0 w-[90vw] text-center">
         <div className=" dark:text-white text-black  leading-snug tracking-wide">
-          {renderWords()}   
-        </div>
-        
+          {renderWords()}
+          
+        </div>        
       </div>
     </div>
   );

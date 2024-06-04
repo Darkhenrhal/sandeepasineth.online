@@ -9,13 +9,16 @@ import MagicButton from './ui/MagicButton';
 import { BiSolidMessageRounded } from 'react-icons/bi';
 import { HiDocumentDownload } from 'react-icons/hi';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import { TextGenerateEffect1 } from './ui/text-generation-1';
+import { TextGenerateEffect2 } from './ui/text-generation-2';
+
 
 const Hero = () => {
- 
-  const [text] = useTypewriter({
-    words: ["Full-Stack Developer", "UI/UX Designer", "Mobile Application Developer"],
-    loop: true,
-  });
+  // Use this for Type writer effect
+  // const [text] = useTypewriter({
+  //   words: ["Full-Stack Developer", "UI/UX Designer", "Mobile Application Developer"],
+  //   loop: true,
+  // });
 
   
   return (
@@ -30,16 +33,29 @@ const Hero = () => {
       </div>
       <div className="flex justify-center relative my-20">
         <div className='max-w-[95vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80" />
+          
+            <TextGenerateEffect1
+              className='text-center'
+              words='Hello&nbsp;It&apos;s me,'
+            />
+
+            
+            
           <TextGenerateEffect
             className='text-center text-[30px] md:text-5xl lg:text-6xl'
-            words="Hello, It's me Sandeepa Sineth"
+            words="Sandeepa Sineth Wickramasinghe"
           />
+          <TextGenerateEffect2
+            className='text-center md:tracking-wider mb-4 text-lg md:text-sm lg:text-xl'
+            words='I&apos;m a {Software Developer} / {Mobile Application Developer} / {Web Developer} / {UI/UX Designer} specializing in designing & developing exceptional digital experiences.'
+          />
+
+          
           <pre className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl opacity-0 animate-fadeIn delay-1000ms'>
            {/* <span className='opacity-0 animate-fadeIn delay-1000ms'>I am a </span><span>{text}</span><Cursor /> </pre>  */}
-           <span className=''>I am a </span><span>{text}<Cursor /> </span>
+           {/* <span className=''>I am a </span><span>{text}<Cursor /> </span> */}
            </pre>
-          <div className='flex gap-5 opacity-0 animate-fadeIn delay-1000ms'>
+          {/* <div className='flex gap-5 opacity-0 animate-fadeIn delay-1000ms'>
             <a href='#about'>
               <MagicButton
                 title="Say, Hello!"
@@ -54,7 +70,7 @@ const Hero = () => {
                 position='right'
               />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

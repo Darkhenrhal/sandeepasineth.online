@@ -5,7 +5,7 @@ import { cn } from "@/utils/cn";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 
-export const TextGenerateEffect = ({
+export const TextGenerateEffect1 = ({
   words,
   className,
 }: {
@@ -34,7 +34,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={`${idx == 2 ? 'text-purple':idx==1 ?'text-bluem':'dark:text-white text-black'} opacity-0`}
+              className={'opacity-0 uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'}
             >
               {word}{" "}
             </motion.span>
@@ -53,9 +53,8 @@ export const TextGenerateEffect = ({
     <div className={cn("font-bold", className)}>
       <div className="my-4 mt-0 w-[90vw]">
         <div className=" dark:text-white text-black  leading-snug tracking-wide">
-          {renderWords()}   
-        </div>
-        
+          {renderWords()}
+        </div>        
       </div>
     </div>
   );
