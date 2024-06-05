@@ -9,6 +9,7 @@ import { useState } from "react";
 import animationData from '@/data/confetti.json'
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { GrLinkedin } from "react-icons/gr";
 import MBsecond from "./MBsecond";
 export const BentoGrid = ({
   className,
@@ -21,9 +22,10 @@ export const BentoGrid = ({
     <section>
       <div>
              <div className=" pb-0 lg:pt-20 md:pt-100 sm:pt-100  xl:pt-20 ">
-            <h1 className='heading'>Get to know {' '} <span className="text-purple">Me</span></h1>
+            <h1 className='heading'>Get to {' '} <span className="text-bluem">know</span>   <span className="text-purple">Me</span></h1>
             </div>
       </div>
+      
       <div
           className={cn(
             "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
@@ -70,6 +72,9 @@ export const BentoGridItem = ({
     setCopied(true)
   }
 
+  const goToLinkedIn = () => {
+    window.open("https://linkedin.com/in/sandeepa-sineth", "_blank");
+  };
 
   return (
 
@@ -118,7 +123,8 @@ export const BentoGridItem = ({
           </BackgroundGradientAnimation>
         )}
         
-        <div
+        {id===5 && (
+          <div
           className={cn(
             titleClassName,
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
@@ -141,10 +147,93 @@ export const BentoGridItem = ({
             </div>
             
           </div>
+          <MBsecond
+          title="Visit "
+          icon={<GrLinkedin />}
+          position="left"
+          handleClick={goToLinkedIn}
+          otherClasses="!bg-[#161A31]"
+        />
         </div>
-         
-       
-      {id===2 && <GlobeDemo/>}
+        )}
+      {id===4 && (
+        <div
+        className={cn(
+          titleClassName,
+          "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+        )}
+        >
+        {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
+        <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+          {description}
+        </div>
+        {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
+        {/* remove mb-2 mt-2 */}
+        <div
+          className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 flex`}
+        >
+          <div>
+          {title}
+          </div>
+          
+        </div>
+      </div>
+      )}  
+      
+      {id===1 && (
+        <div className={cn(
+          titleClassName,
+          "group-hover/bento:translate-x-2 transition duration-200 relative md:h-fit min-h-40 flex flex-col px-5 p-5 lg:p-10"
+        )}>
+          <div className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 flex`}>{title}</div>
+          <div className="font-sans font-extralight w-[95%]  md:text-sm  lg:text-base  text-sm text-[#C1C2D3] z-10">
+            <div className="items-center">
+                <p className="text-left text-[#C1C2D3] m-[20px]">
+                  <b className="text-bluem">I'm a fresh graduate from the University of Kelaniya,Sri Lanka</b> with a degree in Computer Science and additional studies in Statistics and Pure Mathematics. My journey in the tech world has been an exciting blend of developing and designing software and web applications. From initial concept to final deployment, I strive to create solutions that not only function efficiently but also provide a seamless, pixel-perfect user experience.
+                </p>
+
+                <p className="text-left  text-[#C1C2D3] m-[20px]">
+                  I am passionate about learning and constantly seek out new and better ways to create clean, efficient, and scalable code. I am always eager to embrace opportunities that allow me to enhance my skills and knowledge.
+                </p>
+                <p className="text-left  text-[#C1C2D3] m-[20px]">
+                Collaboration is key to my process; I thrive in environments where I can work alongside others who inspire and challenge me to reach my full potential. My ultimate goal is to create innovative and impactful software with a team that shares my passion for excellence.
+
+                </p>
+                <p className="text-left  text-[#C1C2D3] m-[20px]">
+                <b className="text-purple">When I'm not in front of a computer screen,</b> you'll likely find me immersed in a good book, enjoying the company of dogs, or exploring the beauty of nature. These moments of relaxation and inspiration fuel my creativity and drive.
+
+                </p>
+
+                <p className="text-left text-bluem text-lg">
+                Let's create something amazing together!
+
+                </p> 
+            </div>
+        </div>
+        </div>
+        
+      )}
+      {id===2 && (
+        <div className={cn(
+          titleClassName,
+          "group-hover/bento:translate-x-2 transition duration-200 relative md:h-fit min-h-40 flex flex-col px-5 p-5 lg:p-10"
+        )}>
+          <div
+          className={`font-sans text-lg lg:text-base max-w-96 font-bold z-50 block`}
+          > 
+            {description}
+          </div>
+          <div className="font-sans font-extralight  md:text-xs lg:text-base text-sm text-[#C1C2D3] z-100">
+          
+          </div>
+          
+          <div className="mt-3">
+          <GlobeDemo/>
+          </div>
+
+          
+        </div>
+      )}
       {id===3 && (
         <div className="flex gap-1 lg:gap-5 w-fit
         absolute -right-3 lg:-right-2">
@@ -185,7 +274,7 @@ export const BentoGridItem = ({
         {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
         {/* add handleCopy() for the copy the text */}
         <div
-          className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
+          className={`z-100 absolute -bottom-5 right-0 ${copied ? "block" : "block"
             }`}
         >
         <Lottie options={{
@@ -199,13 +288,32 @@ export const BentoGridItem = ({
       
       
         </div>
-        <MBsecond
+        <div
+        className={cn(
+          titleClassName,
+          "z-1 group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+        )}
+        >
+
+        <div
+          className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-50 block`}
+        >
+          <div className="text-left">
+          {title}
+          </div>
+          <MBsecond
           title={copied ? "Resume Downloaded" : "Download Resume"}
           icon={<HiDocumentDownload />}
           position="left"
           handleClick={handleCopy}
           otherClasses="!bg-[#161A31]"
         />
+          
+        </div>
+
+        </div>
+   
+        
         </div>          
 
        

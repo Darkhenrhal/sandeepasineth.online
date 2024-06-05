@@ -131,6 +131,7 @@ const Skills=() => {
               }>
           <CanvasRevealEffect
             animationSpeed={3}
+            // containerClassName="bg-sky-600"
             containerClassName="bg-sky-600"
             colors={[[125, 211, 252]]}
           />

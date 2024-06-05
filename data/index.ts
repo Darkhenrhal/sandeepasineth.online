@@ -10,36 +10,21 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication for Premium Creation",
-    description: "",
-    // className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    title: "Introduction",
     className: "lg:col-span-2 md:col-span-6 md:row-span-2 lg:min-h-[40vh]",
-    imgClassName: "w-full h-full",
+    imgClassName: "w-full h-full z-[-100] opacity-25",
     titleClassName: "justify-end",
     img: "/LetterSwithBackground.png",
     spareImg: "",
   },
   {
     id: 2,
-    title: "With the Responsive UI/UX Designs",
-    description: "",
+    title: ", ",
+    description: "Skilled communicator, creative thinker, and collaborative team player.",
     // className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     className: "lg:col-span-1 md:col-span-3 md:row-span-1",
-
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
-  },
-  {
-    id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    // className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    className: "lg:col-span-1 md:col-span-3 md:row-span-1",
-
-    imgClassName: "",
-    titleClassName: "justify-center",
     img: "",
     spareImg: "",
   },
@@ -58,10 +43,10 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "my LinkedIN",
+    description: "All about me is in ",
     // className: "md:col-span-3 md:row-span-2",
-    className: "md:col-span-2 md:row-span-2",
+    className: "md:col-span-2 md:row-span-1",
 
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -84,36 +69,46 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Project NaviGuide",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    title: "NaviGuide",
+    des: "NaviGuide is a web platform allowed community to connect Resource persons for Awareness Programs..",
+    img: "/project-1.png",
+    iconLists: ["/re.svg", "/css.png", "/spring.png", "/mongo.svg"],
     link: "/ui.earth.com",
   },
+
   {
     id: 2,
     title: "To-Do Android Application",
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/kotlin.png", "/litesql.png"],
     link: "/ui.yoom.com",
   },
   {
     id: 3,
     title: "TaEx Windows Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    des: "The software is focused on managing the tasks and the expenditures of a corresponding Objective..",
+    img: "/project-3.png",
+    iconLists: ["/asp.net.png", "csh.png", "mysql.png"],
     link: "/ui.aiimg.com",
   },
   {
     id: 4,
-    title: "EasyPlant UI/UX Concept Application",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    title: "Mathematics Student Association Website",
+    des: " Students’ Association website is to display the activities and events of the association for students and outsiders..",
+    img: "/project-2.png",
+    iconLists: ["/html.png", "/css.png", "/js.png", "/mysql.png", "/php.png"],
     link: "/ui.apple.com",
   },
+  {
+    id: 5,
+    title: "EasyPlant UI/UX Concept Application",
+    des: "EasyPlant is a Conceptual UI/UX project of a Mobile Application related to Agriculture..",
+    img: "/project-4.png",
+    iconLists: ["/figma.png"],
+    link: "/ui.apple.com",
+  },
+  
 ];
 
 export const testimonials = [
