@@ -11,6 +11,7 @@ import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import { GrLinkedin } from "react-icons/gr";
 import MBsecond from "./MBsecond";
+
 export const BentoGrid = ({
   className,
   children,
@@ -67,9 +68,12 @@ export const BentoGridItem = ({
   const [copied,setCopied]=useState(false);
   //Update this to download resume... 
   const handleCopy =()=>{
-    navigator.clipboard.writeText('sineth21404@gmail.com');
-
-    setCopied(true)
+   // navigator.clipboard.writeText('sineth21404@gmail.com');
+   const link = document.createElement('a');
+   link.href = '../../../public/files/resume.pdf'; // Replace with the actual URL to your PDF
+   link.download = 'Sandeepa Sineth Wickramasinghe.pdf'; // The filename for the downloaded PDF
+   link.click();
+  setCopied(true)
   }
 
   const goToLinkedIn = () => {

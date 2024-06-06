@@ -20,10 +20,11 @@ export default function Home() {
         <FloatingNav navItems={navItems}/>
         <Hero/>
         <Grid/>
-        <RecentProjects/>  
+        <RecentProjects/> 
         <Experience/>
         <Skills/>
-        <Clients/>
+        {/* <Clients/> */}
+        {/* Add when have clients */}
         <Footer/>
       </div>
     </main>

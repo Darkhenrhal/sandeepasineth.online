@@ -1,9 +1,13 @@
 export const navItems = [
   { name: "Home", link: "#hero" },
   { name: "About", link: "#about" },
-  { name: "Skills", link:"#skills"},
+ 
   { name: "Projects", link: "#RecentProjects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "What I do", link:"#ido"},
+
+  { name: "Skills", link:"#skills"},
+
+  // { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -72,7 +76,7 @@ export const projects = [
     title: "NaviGuide",
     des: "NaviGuide is a web platform allowed community to connect Resource persons for Awareness Programs..",
     img: "/project-1.png",
-    iconLists: ["/re.svg", "/css.png", "/spring.png", "/mongo.svg"],
+    iconLists: ["/re.svg", "/css.png","/html.png", "/spring.png", "/mongo.svg","java.png","js.png"],
     link: "/ui.earth.com",
   },
 
@@ -89,7 +93,7 @@ export const projects = [
     title: "TaEx Windows Application",
     des: "The software is focused on managing the tasks and the expenditures of a corresponding Objective..",
     img: "/project-3.png",
-    iconLists: ["/asp.net.png", "csh.png", "mysql.png"],
+    iconLists: ["/asp.net.png", "/csh.png", "/mysql.png"],
     link: "/ui.aiimg.com",
   },
   {
@@ -102,6 +106,23 @@ export const projects = [
   },
   {
     id: 5,
+    title: "Hotel Reservation System",
+    des: "This is a command line software which focus on the functionality, Which provides Employee, Customer and Order management..",
+    img: "/project-5.png",
+    iconLists: ["/java.png"],
+    link: "/ui.apple.com",
+  },
+  {
+    id: 6,
+    title: "Santa GPT UI/UX",
+    des: "Santa GPT is christmas game which launched by DATCom consultants for SLT Mobitel. The UI of the game has been developed with the theme of AI Generated..",
+    img: "/santagpt.png",
+    iconLists: ["/figma.png","leanardo.png","photoshop.png"],
+    link: "/ui.apple.com",
+  },
+  
+  {
+    id: 7,
     title: "EasyPlant UI/UX Concept Application",
     des: "EasyPlant is a Conceptual UI/UX project of a Mobile Application related to Agriculture..",
     img: "/project-4.png",
@@ -114,34 +135,11 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
+      "Collaborating with Sandeepa Sineth for the Santa GPT project for SLT Mobitel was an absolute pleasure. As a UI/UX Designer, his creativity and dedication to delivering exceptional results were evident throughout our project. His enthusiasm for every facet of design truly stands out. If you're seeking to elevate your website and enhance your brand, Sineth is the ideal partner.",
+    name: "Saman Ilangamuwa",
+    title: "Founder of DATCom Consultant",
+    image:"/client1.png",
+  }
 ];
 
 export const companies = [

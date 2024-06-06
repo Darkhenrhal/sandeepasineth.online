@@ -1,7 +1,11 @@
+"use client";
+
 import { projects } from '@/data'
 import React from 'react'
 import { PinContainer } from './ui/3d-pin'
 import { FaLocationArrow } from 'react-icons/fa'
+import { motion } from "framer-motion";
+import { LampContainer } from "../Components/ui/Lamp"
 
 const RecentProjects = () => {
   return (
@@ -10,7 +14,7 @@ const RecentProjects = () => {
         My most {''}
         <span className='text-purple'>Recent projects</span>
       </h1>
-      <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-0'>
+      <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-[0px] mt-0'>
         {projects.map(({id, title, des, img, iconLists, link})=>(
           <div key={id} className='sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem]  flex items-center justify-center sm:w-[570px] w-[80vw]'>
             <PinContainer title={link} href={link}>
@@ -25,7 +29,7 @@ const RecentProjects = () => {
               <h1 className='font-bold lg:text-2xl md:text-xl text-base line-clamp-1'>
                 {title}
               </h1>
-              <p className='lg:text-xl lg:font-normal font-light text-sm line-clamp-2'>
+              <p className='lg:text-xl lg:font-normal font-light text-sm line-clamp-3'>
                 {des}
               </p>
               <div className='flex items-center justify-between mt-7 mb-3'>
@@ -50,9 +54,33 @@ const RecentProjects = () => {
           
         ))}
       </div>
+      {/* <div>
+        {LampDemo()}
+      </div> */}
 
+      {/* when have new things */}
     </div>
+    
   )
+}
+
+export function LampDemo() {
+  return (
+    <LampContainer>
+      <motion.h1
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+      >
+        Build lamps <br /> the right way
+      </motion.h1>
+    </LampContainer>
+  );
 }
 
 export default RecentProjects
