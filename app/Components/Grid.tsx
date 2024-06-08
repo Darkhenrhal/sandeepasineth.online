@@ -8,7 +8,7 @@ const Grid =()=>{
             {/* <div className=" pt-60 pb-0 lg:pt-20 md:pt-80 sm:pt-80  xl:pt-80 ">
             <h1 className='heading'>Get to know {' '} <span className="text-purple">Me</span></h1>
             </div> */}
-            <BentoGrid className="w-full py-10 sm:py-5 md:py-10 lg:py-15">
+            <BentoGrid className="w-full  py-10 sm:py-5 md:py-10 lg:py-15">
             
                 {gridItems.map
                 (({id,title,description,className,img,imgClassName,titleClassName,spareImg})=>(

@@ -70,7 +70,7 @@ export const BentoGridItem = ({
   const handleCopy =()=>{
    // navigator.clipboard.writeText('sineth21404@gmail.com');
    const link = document.createElement('a');
-   link.href = '../../../public/files/resume.pdf'; // Replace with the actual URL to your PDF
+   link.href = '/files/resume.pdf';
    link.download = 'Sandeepa Sineth Wickramasinghe.pdf'; // The filename for the downloaded PDF
    link.click();
   setCopied(true)
@@ -193,7 +193,7 @@ export const BentoGridItem = ({
           <div className="font-sans font-extralight w-[95%]  md:text-sm  lg:text-base  text-sm text-[#C1C2D3] z-10">
             <div className="items-center">
                 <p className="text-left text-[#C1C2D3] m-[20px]">
-                  <b className="text-bluem">I'm a fresh graduate from the University of Kelaniya,Sri Lanka</b> with a degree in Computer Science and additional studies in Statistics and Pure Mathematics. My journey in the tech world has been an exciting blend of developing and designing software and web applications. From initial concept to final deployment, I strive to create solutions that not only function efficiently but also provide a seamless, pixel-perfect user experience.
+                  <b className="text-bluem">I'm a fresh graduate from the University of Kelaniya,&nbsp;Sri Lanka</b> with a degree in Computer Science and additional studies in Statistics and Pure Mathematics. My journey in the tech world has been an exciting blend of developing and designing software and web applications. From initial concept to final deployment, I strive to create solutions that not only function efficiently but also provide a seamless, pixel-perfect user experience.
                 </p>
 
                 <p className="text-left  text-[#C1C2D3] m-[20px]">
@@ -270,59 +270,44 @@ export const BentoGridItem = ({
         </div>
       )}
       { id===6 && (
-        
-        // <div className="mt-5 relative">
-        <div className="mt-30 absolute block">
-        {/* button border magic from tailwind css buttons  */}
-        {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-        {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-        {/* add handleCopy() for the copy the text */}
-        <div
-          className={`z-100 absolute -bottom-5 right-0 ${copied ? "block" : "block"
-            }`}
-        >
-        <Lottie options={{
-                    loop:copied,
-                    autoplay:copied,
-                    animationData,
-                    rendererSettings:{
-                      preserveAspectRatio:'xMidYMid slice',
-                    }
-                  }}/>
-      
-      
-        </div>
-        <div
-        className={cn(
-          titleClassName,
-          "z-1 group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
-        )}
-        >
+  <div className="relative flex flex-col h-full justify-center items-center">
+    <BackgroundGradientAnimation>
+      <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
+    </BackgroundGradientAnimation>
 
-        <div
-          className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-50 block`}
-        >
-          <div className="text-left">
-          {title}
-          </div>
-          <MBsecond
+    <div className="mt-5 relative w-full flex flex-col items-center">
+      <div
+        className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-50 text-center`}
+      >
+        {title}
+      </div>
+
+      <div className="mt-5">
+        <MBsecond
           title={copied ? "Resume Downloaded" : "Download Resume"}
           icon={<HiDocumentDownload />}
           position="left"
           handleClick={handleCopy}
           otherClasses="!bg-[#161A31]"
         />
-          
-        </div>
+      </div>
 
-        </div>
-   
-        
-        </div>          
+      <div
+        className={`z-100 w-fit h-fit absolute bottom-10 right-1/2 transform translate-x-1/2`}
+      >
+        <Lottie options={{
+          loop: copied,
+          autoplay: copied,
+          animationData,
+          rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice',
+          }
+        }} />
+      </div>
+    </div>
+  </div>
+)}
 
-       
-         
-      )}
         
   </div>
   </div>

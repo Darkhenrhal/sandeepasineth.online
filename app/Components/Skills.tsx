@@ -27,7 +27,7 @@ const Skills=() => {
                         <h2>Springboot</h2>
                       </div>
                       <div>
-                        <h2>Net</h2>
+                        <h2>.Net</h2>
                       </div>
                       <div>
                         <h2>SQL</h2>
@@ -122,6 +122,9 @@ const Skills=() => {
                   </div>
                   <div>
                     <h2>Mongo Compass</h2>
+                  </div>
+                  <div>
+                    <h2>Docker</h2>
                   </div>
                   <div>
                     <h2>Linux Basics</h2>

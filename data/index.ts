@@ -1,12 +1,9 @@
 export const navItems = [
   { name: "Home", link: "#hero" },
   { name: "About", link: "#about" },
- 
   { name: "Projects", link: "#RecentProjects" },
   { name: "What I do", link:"#ido"},
-
   { name: "Skills", link:"#skills"},
-
   // { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
@@ -34,7 +31,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "A Tech enthusiast with a passion for development.",
     description: "",
     // className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     className: "lg:col-span-1 md:col-span-3 md:row-span-1",
@@ -47,8 +44,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "my LinkedIN",
-    description: "All about me is in ",
+    title: "my LinkedIn",
+    description: "All About Me is in ",
     // className: "md:col-span-3 md:row-span-2",
     className: "md:col-span-2 md:row-span-1",
 
@@ -59,10 +56,9 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: `Wanna check my Resume?`,
+    title: `Do you want to check my Resume?`,
     description: "",
-    className: "lg:col-span-1 md:col-span-3 md:row-span-1",
-
+    className: "lg:col-span-1 md:col-span-3 md:row-span-1 ",
     imgClassName: "Wanna check my Resume?",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
@@ -74,19 +70,19 @@ export const projects = [
   {
     id: 1,
     title: "NaviGuide",
-    des: "NaviGuide is a web platform allowed community to connect Resource persons for Awareness Programs..",
+    des: "NaviGuide is a web platform that allows the community to connect Resource persons for Awareness Programs..",
     img: "/project-1.png",
     iconLists: ["/re.svg", "/css.png","/html.png", "/spring.png", "/mongo.svg","java.png","js.png"],
-    link: "/ui.earth.com",
+    link: "github.com/Darkhenrhal/NaviGuide",
   },
 
   {
     id: 2,
-    title: "To-Do Android Application",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "ToDO Android Application",
+    des: "ToDO,Is a mobile application designed to streamline your daily tasks and manage your to-do lists efficiently..",
+    img: "/todo.png",
     iconLists: ["/kotlin.png", "/litesql.png"],
-    link: "/ui.yoom.com",
+    link: "github.com/Darkhenrhal/ToDO-.git",
   },
   {
     id: 3,
@@ -94,31 +90,31 @@ export const projects = [
     des: "The software is focused on managing the tasks and the expenditures of a corresponding Objective..",
     img: "/project-3.png",
     iconLists: ["/asp.net.png", "/csh.png", "/mysql.png"],
-    link: "/ui.aiimg.com",
+    link: "github.com/Darkhenrhal/TaEx.git",
   },
   {
     id: 4,
     title: "Mathematics Student Association Website",
-    des: " Students’ Association website is to display the activities and events of the association for students and outsiders..",
+    des: "The Students’ Association website is to display the activities and events of the association for students and outsiders..",
     img: "/project-2.png",
     iconLists: ["/html.png", "/css.png", "/js.png", "/mysql.png", "/php.png"],
-    link: "/ui.apple.com",
+    link: "github.com/Darkhenrhal/Mathematics_Student_Association_Website.git",
   },
   {
     id: 5,
     title: "Hotel Reservation System",
-    des: "This is a command line software which focus on the functionality, Which provides Employee, Customer and Order management..",
+    des: "This is a command line software that focuses on functionality, Which provides Employee, Customer, and Order management..",
     img: "/project-5.png",
     iconLists: ["/java.png"],
-    link: "/ui.apple.com",
+    link: "github.com/Darkhenrhal/Hotel_Reservation_System.git",
   },
   {
     id: 6,
-    title: "Santa GPT UI/UX",
-    des: "Santa GPT is christmas game which launched by DATCom consultants for SLT Mobitel. The UI of the game has been developed with the theme of AI Generated..",
+    title: "SLT Mobitel Santa GPT UI/UX",
+    des: "Santa GPT is a Christmas game launched by DATCom consultants for SLT Mobitel. The UI of the game has been developed with the theme of AI-Generated..",
     img: "/santagpt.png",
     iconLists: ["/figma.png","leanardo.png","photoshop.png"],
-    link: "/ui.apple.com",
+    link: "www.figma.com/SandeepaSineth/SantaGPT",
   },
   
   {
@@ -127,7 +123,7 @@ export const projects = [
     des: "EasyPlant is a Conceptual UI/UX project of a Mobile Application related to Agriculture..",
     img: "/project-4.png",
     iconLists: ["/figma.png"],
-    link: "/ui.apple.com",
+    link: "www.figma.com/SandeepaSineth/EasyPlant",
   },
   
 ];
@@ -185,7 +181,7 @@ export const whatido = [
   },
   {
     id: 3,
-    title: "Mobile Application Developemt",
+    title: "Mobile Application Development",
     desc: "Create engaging mobile experiences that bring your ideas to life on smartphones and tablets.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp-phone.png",
@@ -193,7 +189,7 @@ export const whatido = [
   {
     id: 2,
     title: "Responsive UI / UX Design",
-    desc: "Strive to develop and implement responsive and aesthetically pleasing interfaces for websites and apps that adapts to any type of device, platform or browser.",
+    desc: "Strive to develop and implement responsive and aesthetically pleasing interfaces for websites and apps that adapt to any type of device, platform, or browser.",
     className: "md:col-span-2", 
     thumbnail: "/exp2.svg",
   },
@@ -201,7 +197,7 @@ export const whatido = [
   {
     id: 4,
     title: "Involvement and Freelance",
-    desc: "I Empower businesses as a freelance developer & UI/UX Designer along with Innovative solutions. ",
+    desc: "I Empower businesses as a freelance Developer & UI/UX Designer along with Innovative solutions. ",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
@@ -214,10 +210,10 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/link.svg",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/twit.svg",
   },
 ];

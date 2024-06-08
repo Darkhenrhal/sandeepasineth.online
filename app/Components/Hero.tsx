@@ -36,7 +36,7 @@ const Hero = () => {
           
             <TextGenerateEffect1
               className='text-center'
-              words='Hello&nbsp;It&apos;s me,'
+              words='Hello,&nbsp;It&apos;s me,'
             />
 
             
