@@ -5,6 +5,7 @@ import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
 import { socialMedia } from '@/data'
 import { profile } from 'console'
+import Image from 'next/image'
 
 const Footer = () => {
   
@@ -26,7 +27,7 @@ const Footer = () => {
     <section className="w-full pt-[300px] md:pt-[250px] pb-10" id="contact">
       {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
+        <Image
           src="/footer-grid.svg"
           alt="grid"
           className="w-full h-full opacity-50 "
@@ -62,7 +63,7 @@ const Footer = () => {
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             ><button onClick={() => goToSocialMedia(info.id)}>
 
-                              <img src={info.img} alt="icons" width={20} height={20}  />
+                              <Image src={info.img} alt="icons" width={20} height={20}  />
 
             </button>
             </div>

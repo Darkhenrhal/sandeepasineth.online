@@ -11,6 +11,7 @@ import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import { GrLinkedin } from "react-icons/gr";
 import MBsecond from "./MBsecond";
+import Image from 'next/image';
 
 export const BentoGrid = ({
   className,
@@ -100,7 +101,7 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center ")}
@@ -112,7 +113,7 @@ export const BentoGridItem = ({
             } `}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
               //   width={220}
@@ -193,7 +194,7 @@ export const BentoGridItem = ({
           <div className="font-sans font-extralight w-[95%]  md:text-sm  lg:text-base  text-sm text-[#C1C2D3] z-10">
             <div className="items-center">
                 <p className="text-left text-[#C1C2D3] m-[20px]">
-                  <b className="text-bluem">I'm a fresh graduate from the University of Kelaniya,&nbsp;Sri Lanka</b> with a degree in Computer Science and additional studies in Statistics and Pure Mathematics. My journey in the tech world has been an exciting blend of developing and designing software and web applications. From initial concept to final deployment, I strive to create solutions that not only function efficiently but also provide a seamless, pixel-perfect user experience.
+                  <b className="text-bluem">I&apos;m a fresh graduate from the University of Kelaniya,&nbsp;Sri Lanka</b> with a degree in Computer Science and additional studies in Statistics and Pure Mathematics. My journey in the tech world has been an exciting blend of developing and designing software and web applications. From initial concept to final deployment, I strive to create solutions that not only function efficiently but also provide a seamless, pixel-perfect user experience.
                 </p>
 
                 <p className="text-left  text-[#C1C2D3] m-[20px]">
@@ -204,12 +205,12 @@ export const BentoGridItem = ({
 
                 </p>
                 <p className="text-left  text-[#C1C2D3] m-[20px]">
-                <b className="text-purple">When I'm not in front of a computer screen,</b> you'll likely find me immersed in a good book, enjoying the company of dogs, or exploring the beauty of nature. These moments of relaxation and inspiration fuel my creativity and drive.
+                <b className="text-purple">When I&apos;m not in front of a computer screen,</b> you&apos;ll likely find me immersed in a good book, enjoying the company of dogs, or exploring the beauty of nature. These moments of relaxation and inspiration fuel my creativity and drive.
 
                 </p>
 
                 <p className="text-left text-bluem text-lg">
-                Let's create something amazing together!
+                Let&apos;s create something amazing together!
 
                 </p> 
             </div>

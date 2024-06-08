@@ -6,6 +6,7 @@ import { PinContainer } from './ui/3d-pin'
 import { FaLocationArrow } from 'react-icons/fa'
 import { motion } from "framer-motion";
 import { LampContainer } from "../Components/ui/Lamp"
+import Image from 'next/image'
 
 const RecentProjects = () => {
   const goToProject = (ProjectId: number) => {
@@ -47,9 +48,9 @@ const RecentProjects = () => {
             <PinContainer title={link} href={link}>
               <div className='relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10'>
                 <div>
-                  <img src='/bg.png' alt='bt-img'/>
+                  <Image src='/bg.png' alt='bt-img'/>
                 </div>
-                <img src={img}
+                <Image src={img}
                 alt={title}
                 className='z-10 absolute bottom-0'/>
               </div>
@@ -68,7 +69,7 @@ const RecentProjects = () => {
                       transform:`translateX(-${5 * 
                       index * 2}px)`
                     }}>
-                      <img src={icon} alt={icon} className='p-2'/>
+                      <Image src={icon} alt={icon} className='p-2'/>
                     </div>
                   ))}
                 </div>

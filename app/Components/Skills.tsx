@@ -4,6 +4,7 @@ import React from "react";
 import { AnimatePresence, color, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/app/Components/ui/canvas-reveal-effect";
 import { TbSettingsCode } from "react-icons/tb";
+import Image from 'next/image';
 
 
 const Skills=() => {
@@ -16,7 +17,7 @@ const Skills=() => {
         <Card 
                   title="Development"
                   // icon={<AceternityIcon order="Developemt" />} 
-                  icon={<img src="/skill-1.png"/>} 
+                  icon={<Image src="/skill-1.png" alt="skill-1"/>} 
                   description={
                     <div className="grid grid-cols-3 gap-3">
                       {/* <div className="border-2 rounded-[100%]">ReactJs</div> */}
@@ -74,7 +75,7 @@ const Skills=() => {
         </Card>
         <Card 
                   title="Design"
-                  icon={<img src="/skill-2.png"/>} 
+                  icon={<Image src="/skill-2.png" alt="skill-3"/>} 
                   description={
                     <div className="grid grid-cols-1 gap-3">
                       {/* <div className="border-2 rounded-[100%]">ReactJs</div> */}
@@ -105,7 +106,7 @@ const Skills=() => {
      </Card>
         <Card 
                   title="Tools & Knowledge"
-                  icon={<img src="/skill-3.png"/>} 
+                  icon={<Image src="/skill-3.png" alt="skill3"/>} 
                   description={<div className="grid grid-cols-1 gap-3">
                   {/* <div className="border-2 rounded-[100%]">ReactJs</div> */}
                   <div>
