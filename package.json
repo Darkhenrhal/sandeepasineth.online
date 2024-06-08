@@ -1,5 +1,4 @@
 {
-  "homepage": "https://Darkhenrhal.github.io/SandeepaSinethPortfolioWebSite",
   "name": "myportfolio",
   "version": "0.1.0",
   "private": true,
@@ -8,8 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" 
   },
   "dependencies": {
     "@react-three/drei": "^9.105.6",
