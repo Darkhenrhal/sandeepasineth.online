@@ -22,7 +22,7 @@ const Hero = () => {
 
   
   return (
-    <div className='pb-20 pt-36' id='hero'>
+    <div className='pb-20 pt-36 md:pt-40 ' id='hero'>
       <div>
         <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white' />
         <Spotlight className='top-2 left-80 h-[80vh] w-[50vw]' fill='purple' />

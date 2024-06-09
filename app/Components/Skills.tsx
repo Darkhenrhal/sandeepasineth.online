@@ -17,7 +17,9 @@ const Skills=() => {
         <Card 
                   title="Development"
                   // icon={<AceternityIcon order="Developemt" />} 
-                  icon={<Image src="/skill-1.png" alt="skill-1"/>} 
+                  // icon={<Image src="/skill-1.png" alt="skill-1"/>} 
+                  icon={<img src="/skill-1.png" alt="skill-1"/>} 
+
                   description={
                     <div className="grid grid-cols-3 gap-3">
                       {/* <div className="border-2 rounded-[100%]">ReactJs</div> */}
@@ -75,7 +77,8 @@ const Skills=() => {
         </Card>
         <Card 
                   title="Design"
-                  icon={<Image src="/skill-2.png" alt="skill-3"/>} 
+                  //icon={<Image src="/skill-2.png" alt="skill-3"/>} 
+                  icon={<img src="/skill-2.png" alt="skill-3"/>} 
                   description={
                     <div className="grid grid-cols-1 gap-3">
                       {/* <div className="border-2 rounded-[100%]">ReactJs</div> */}
@@ -106,7 +109,9 @@ const Skills=() => {
      </Card>
         <Card 
                   title="Tools & Knowledge"
-                  icon={<Image src="/skill-3.png" alt="skill3"/>} 
+                  //icon={<Image src="/skill-3.png" alt="skill3"/>} 
+                  icon={<img src="/skill-3.png" alt="skill3"/>} 
+
                   description={<div className="grid grid-cols-1 gap-3">
                   {/* <div className="border-2 rounded-[100%]">ReactJs</div> */}
                   <div>
