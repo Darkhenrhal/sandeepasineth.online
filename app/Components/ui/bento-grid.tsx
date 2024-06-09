@@ -22,11 +22,11 @@ export const BentoGrid = ({
 }) => {
   return (
     <section>
-      <div>
-             <div className=" pb-0 lg:pt-20 md:pt-100 sm:pt-100  xl:pt-20 ">
-            <h1 className='heading'>Get to {' '} <span className="text-bluem">know</span>   <span className="text-purple">Me</span></h1>
-            </div>
+      
+      <div className=" pb-0 lg:pt-20 md:pt-[550px] sm:pt-100 pt-[240px]  xl:pt-20  ">
+        <h1 className='heading'>Get to {' '} <span className="text-bluem">know</span>   <span className="text-purple">Me</span></h1>
       </div>
+      
       
       <div
           className={cn(
@@ -101,7 +101,12 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <Image
+            // <Image
+            //   src={img}
+            //   alt={img}
+            //   className={cn(imgClassName, "object-cover object-center ")}
+            // />
+            <img
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center ")}
@@ -113,7 +118,13 @@ export const BentoGridItem = ({
             } `}
         >
           {spareImg && (
-            <Image
+            // <Image
+            //   src={spareImg}
+            //   alt={spareImg}
+            //   //   width={220}
+            //   className="object-cover object-center w-full h-full"
+            // />
+            <img
               src={spareImg}
               alt={spareImg}
               //   width={220}
@@ -152,13 +163,16 @@ export const BentoGridItem = ({
             </div>
             
           </div>
-          <MBsecond
-          title="Visit "
-          icon={<GrLinkedin />}
-          position="left"
-          handleClick={goToLinkedIn}
-          otherClasses="!bg-[#161A31]"
-        />
+          <div className="mt-5 mb-5 self-center">
+                <MBsecond
+                title="Visit "
+                icon={<GrLinkedin />}
+                position="left"
+                handleClick={goToLinkedIn}
+                otherClasses="!bg-[#161A31]"
+              />
+          </div>
+          
         </div>
         )}
       {id===4 && (
@@ -188,7 +202,7 @@ export const BentoGridItem = ({
       {id===1 && (
         <div className={cn(
           titleClassName,
-          "group-hover/bento:translate-x-2 transition duration-200 relative md:h-fit min-h-40 flex flex-col px-5 p-5 lg:p-10"
+          "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
         )}>
           <div className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 flex`}>{title}</div>
           <div className="font-sans font-extralight w-[95%]  md:text-sm  lg:text-base  text-sm text-[#C1C2D3] z-10">
@@ -283,7 +297,7 @@ export const BentoGridItem = ({
         {title}
       </div>
 
-      <div className="mt-5">
+      <div className="mt-5 mb-5">
         <MBsecond
           title={copied ? "Resume Downloaded" : "Download Resume"}
           icon={<HiDocumentDownload />}
