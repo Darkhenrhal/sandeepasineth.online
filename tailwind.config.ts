@@ -22,7 +22,8 @@ const config = {
   prefix: "",
   theme: {
     screens: {
-      'sm': '640px',
+      'sm': '350px',
+      'mdsm':'730px',
       'md': '768px',
       'lg': '1024px',
       'xl': '1280px',
