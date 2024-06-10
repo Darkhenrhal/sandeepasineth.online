@@ -23,7 +23,7 @@ export const BentoGrid = ({
   return (
     <section>
       
-      <div className=" pb-0 lg:pt-20 md:pt-[550px] sm:pt-100 pt-[240px]  xl:pt-20  ">
+      <div className=" pb-0 lg:pt-20 md:pt-[550px] sm:pt-100 pt-[240px] mt-2  xl:pt-20  ">
         <h1 className='heading'>Get to {' '} <span className="text-bluem">know</span>   <span className="text-purple">Me</span></h1>
       </div>
       
