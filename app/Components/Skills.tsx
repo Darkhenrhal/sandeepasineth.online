@@ -33,6 +33,9 @@ const Skills=() => {
                         <h2>.Net</h2>
                       </div>
                       <div>
+                        <h2>Flutter</h2>
+                      </div>
+                      <div>
                         <h2>SQL</h2>
                       </div>
                       <div>
@@ -58,6 +61,9 @@ const Skills=() => {
                       </div>
                       <div>
                         <h2>C#</h2>
+                      </div>
+                      <div>
+                        <h2>Dart</h2>
                       </div>
                       <div>
                         <h2>Kotlin</h2>
