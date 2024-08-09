@@ -11,25 +11,29 @@ import Image from 'next/image'
 const RecentProjects = () => {
   const goToProject = (ProjectId: number) => {
     switch(ProjectId) {
+      
       case 1:
-        window.open("https://github.com/Darkhenrhal/NaviGuide","_blank");
+        window.open("https://github.com/Darkhenrhal/MyGPA.git","_blank");
         break;
       case 2:
-        window.open("https://github.com/Darkhenrhal/ToDO-.git","_blank");
+        window.open("https://github.com/Darkhenrhal/NaviGuide","_blank");
         break;
       case 3:
+        window.open("https://github.com/Darkhenrhal/ToDO-.git","_blank");
+        break;  
+      case 4:
         window.open("https://github.com/Darkhenrhal/TaEx.git","_blank");
         break;
-      case 4:
+      case 5:
         window.open("https://github.com/Darkhenrhal/Mathematics_Student_Association_Website.git","_blank");
         break;
-      case 5:
+      case 6:
         window.open("https://github.com/Darkhenrhal/Hotel_Reservation_System.git","_blank");
         break;  
-      case 6:
+      case 7:
         window.open("https://www.figma.com/design/dgIQV1Lmx88c80eQNEz8k2/Santa-GPT?t=HpI4LqPw1WvPKCe4-1","_blank");
         break;  
-      case 7:
+      case 8:
         window.open("https://www.figma.com/design/ylM7ZDvwwC9uf4WqvNYSBq/EasyPlant?node-id=0-1&t=HpI4LqPw1WvPKCe4-1","_blank");
         break;  
     }

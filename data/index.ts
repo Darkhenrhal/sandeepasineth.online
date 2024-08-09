@@ -69,15 +69,24 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "MyGPA",
+    des: "MyGPA is an ultimate academic companion designed to help students effortlessly keep track of their performance..",
+    img: "/mygpa.png",
+    iconLists: ["/flutter.svg", "/litesql.png","dart.svg"],
+    link: "github.com/Darkhenrhal/MyGPA.git",
+  },
+
+  {
+    id: 2,
     title: "NaviGuide",
     des: "NaviGuide is a web platform that allows the community to connect Resource persons for Awareness Programs..",
     img: "/project-1.png",
     iconLists: ["/re.svg", "/css.png","/html.png", "/spring.png", "/mongo.svg","java.png","js.png"],
     link: "github.com/Darkhenrhal/NaviGuide",
   },
-
+  
   {
-    id: 2,
+    id: 3,
     title: "ToDO Android Application",
     des: "ToDO,Is a mobile application designed to streamline your daily tasks and manage your to-do lists efficiently..",
     img: "/todo.png",
@@ -85,7 +94,7 @@ export const projects = [
     link: "github.com/Darkhenrhal/ToDO-.git",
   },
   {
-    id: 3,
+    id: 4,
     title: "TaEx Windows Application",
     des: "The software is focused on managing the tasks and the expenditures of a corresponding Objective..",
     img: "/project-3.png",
@@ -93,7 +102,7 @@ export const projects = [
     link: "github.com/Darkhenrhal/TaEx.git",
   },
   {
-    id: 4,
+    id: 5,
     title: "Mathematics Student Association Website",
     des: "The Students’ Association website is to display the activities and events of the association for students and outsiders..",
     img: "/project-2.png",
@@ -101,24 +110,24 @@ export const projects = [
     link: "github.com/Darkhenrhal/Mathematics_Student_Association_Website.git",
   },
   {
-    id: 5,
+    id: 6,
     title: "Hotel Reservation System",
-    des: "This is a command line software that focuses on functionality, Which provides Employee, Customer, and Order management..",
+    des: "A software focuses on functionality, Which provides Employee, Customer, and Order management..",
     img: "/project-5.png",
     iconLists: ["/java.png"],
     link: "github.com/Darkhenrhal/Hotel_Reservation_System.git",
   },
   {
-    id: 6,
+    id: 7,
     title: "SLT Mobitel Santa GPT UI/UX",
-    des: "Santa GPT is a Christmas game launched by DATCom consultants for SLT Mobitel. The UI of the game has been developed with the theme of AI-Generated..",
+    des: "A Christmas game launched by DATCom consultants for SLT Mobitel. The game UI followed theme of AI-Generated..",
     img: "/santagpt.png",
     iconLists: ["/figma.png","leanardo.png","photoshop.png"],
     link: "www.figma.com/SandeepaSineth/SantaGPT",
   },
   
   {
-    id: 7,
+    id: 8,
     title: "EasyPlant UI/UX Concept Application",
     des: "EasyPlant is a Conceptual UI/UX project of a Mobile Application related to Agriculture..",
     img: "/project-4.png",
